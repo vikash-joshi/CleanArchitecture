@@ -1,3 +1,5 @@
+using ProductCatalog.Domain.Exceptions;
+
 namespace ProductCatalog.Domain.Entities;
 
 
@@ -39,5 +41,16 @@ public class Product
         StockQuantity = stockQuantity;
 
         CreatedAt = DateTime.UtcNow;
+    }
+
+
+    public void DecreaseQuantity(int quantity)
+    {
+        if (quantity < 0) throw new ArgumentOutOfRangeException(nameof(quantity));
+
+        if (quantity > StockQuantity) throw new InvalidProductStockException();
+
+        StockQuantity -= quantity;
+        UpdatedAt  = DateTime.UtcNow;
     }
 }
