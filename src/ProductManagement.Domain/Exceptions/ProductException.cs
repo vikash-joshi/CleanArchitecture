@@ -1,4 +1,4 @@
-namespace ProductCatalog.Domain.Exceptions;
+namespace ProductManagement.Domain.Exceptions;
 
 public sealed class InvalidProductNameException : DomainException
 {

@@ -1,6 +1,6 @@
-using ProductCatalog.Domain.Exceptions;
+using ProductManagement.Domain.Exceptions;
 
-namespace ProductCatalog.Domain.Entities;
+namespace ProductManagement.Domain.Entities;
 
 
 public class Product

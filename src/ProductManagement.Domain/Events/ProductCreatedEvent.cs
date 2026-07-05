@@ -1,3 +1,3 @@
-namespace ProductCatalog.Domain.Events;
+namespace ProductManagement.Domain.Events;
 
 public sealed record ProductCreatedEvent(Guid ProductId);

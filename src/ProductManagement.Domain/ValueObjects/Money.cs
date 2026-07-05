@@ -1,4 +1,4 @@
-namespace ProductCatalog.Domain.ValueObjects;
+namespace ProductManagement.Domain.ValueObjects;
 
 public sealed record Money
 {
