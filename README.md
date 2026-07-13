@@ -1,3 +1,0 @@
-# CleanArchitecture
-# CleanArchitecture
-# CleanArchitecture
